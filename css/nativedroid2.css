@@ -23,8 +23,8 @@
 
 @import url("flexboxgrid.min.css");
 @import url("material-design-iconic-font.min.css");
-@import url(//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic);
-@import url(//fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,700,900);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,700,900);
 
 body {
 	-webkit-transition: opacity 0.4s;
@@ -671,7 +671,7 @@ hr.inset {
 	box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
 }
 
-.nd2-sidepanel-profile:after {
+/*.nd2-sidepanel-profile:after {
 	position: absolute;
 	content : "";
 	top: 0px;
@@ -688,7 +688,7 @@ hr.inset {
 	background: linear-gradient(to bottom,  rgba(255,255,255,0.01) 0%,rgba(0,0,0,0.5) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#000000',GradientType=0 );
 
-}
+}*/
 
 .nd2-sidepanel-profile .profile-background {
 	position: absolute;
