@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>.::Campañas Mobile::. - Nuevo Pedido</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="../vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="../vendor/wow/animate.css" />
+		<link rel="stylesheet" href="../css/nativedroid2.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="../examples/fragments/panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay" >
+				<nd2-include data-src="../examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Campa&ntilde;as Mobile</h1>
+			</div>
+
+			<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
+				<!-- Credito Empleado -->
+				<label for="slider1b">Equipo:</label>
+                <input type="range" name="slider1" id="slider1b" value="67" min="0" max="100" data-highlight="true" disabled="true">
+                <label for="slider2b">Servicio:</label>
+                <input type="range" name="slider2" id="slider2b" value="48" min="0" max="100" data-highlight="true" disabled="true">
+
+		        <div data-role="collapsible-set" data-inset="false">
+		            <div data-role="collapsible">
+		                <h3>Paso 1: Selecci&oacute;n Equipo</h3>
+		                <!-- EQUIPO -->
+						<div class='inset'>
+							<div class="nd2-card">
+							<div class="card-title has-supporting-text">
+								<h3 class="card-primary-title">Iphone 6S Plus</h3>
+								<h5 class="card-subtitle">SMARTPHONE GAMA ALTA</h5>
+							</div>
+								<div class="card-media">
+									<img src="/img/examples/iphone6splus.png">
+								</div>
+								<a href="#popupDialog" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">Ver Detalle</a>
+					           	<div data-role="popup" id="popupDialog">
+					                <div data-role="header">
+					                	<h1 class='nd-title'>Detalle Equipo</h1>
+					            	</div>
+					                <div data-role="content">
+					                    <p>Descripción del equipo camara bien chevere. Procesador A9, Detector de Huella Digital.</p>
+					                    <a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-primary"><i class='zmdi zmdi-plus'></i> Agregar</a>
+					                    <a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-primary">Cerrar</a>
+					                </div>
+					            </div>
+								<a href="#" class="ui-btn"><i class='zmdi zmdi-plus'></i> Agregar</a>
+							</div>
+						</div>
+						<!-- EQUIPO -->
+
+						<div class='inset'>
+							<div class="nd2-card">
+							<div class="card-title has-supporting-text">
+								<h3 class="card-primary-title">Iphone 6S Plus</h3>
+								<h5 class="card-subtitle">SMARTPHONE GAMA ALTA</h5>
+							</div>
+								<div class="card-media">
+									<img src="/img/examples/iphone6splus.png">
+								</div>
+								<a href="#popupDialog" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">Ver Detalle</a>
+					           	<div data-role="popup" id="popupDialog">
+					                <div data-role="header">
+					                	<h1 class='nd-title'>Detalle Equipo</h1>
+					            	</div>
+					                <div data-role="content">
+					                    <p>Descripción del equipo camara bien chevere. Procesador A9, Detector de Huella Digital.</p>
+					                    <a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-primary"><i class='zmdi zmdi-plus'></i> Agregar</a>
+					                    <a href="dialog/index.html" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-primary">Cerrar</a>
+					                </div>
+					            </div>
+								<a href="#" class="ui-btn"><i class='zmdi zmdi-plus'></i> Agregar</a>
+							</div>
+						</div>
+
+		            </div>
+		            <div data-role="collapsible">
+		                <h3>Paso 2: Selecci&oacute;n Plan y Plazo</h3>
+						<div class='inset'>
+							<div class="nd2-card card-media-right card-media-small">
+								<div class="card-media">
+									<img src="/img/examples/iphone6splus.png">
+								</div>
+								<div class="card-title">
+									<h3 class="card-primary-title">Iphone 6S Plus</h3>
+								</div>
+
+								<div class="card-title has-supporting-text">
+									<label for="select-choice-1b" class="select">Plan</label>
+		                        	<select name="select-choice-1" id="select-choice-1b" data-native-menu="false">
+			                            <option value="Plan Familia 30">Plan Familia 30 (S/.30.00)</option>
+			                            <option value="Plan Familia 50">Plan Familia 50 (S/.50.00)</option>
+			                            <option value="Plan Familia 70">Plan Familia 70 (S/.70.00)</option>
+			                            <option value="Plan Familia 90">Plan Familia 90 (S/.90.00)</option>
+			                            <option value="Plan Familia 100">Plan Familia 100 (S/.100.00)</option>
+			                        </select>
+
+									<label for="select-choice-2b" class="select">Paquete de datos</label>
+		                        	<select name="select-choice-2" id="select-choice-2b" data-native-menu="false">
+			                            <option value="Ninguno">Ninguno</option>
+			                            <option value="1GB">1GB (+S/.10.00)</option>
+			                            <option value="2GB">2GB (+S/.20.00)</option>
+			                            <option value="3GB">3GB (+S/.30.00)</option>
+			                            <option value="4GB">4GB (+S/.40.00)</option>
+			                        </select>
+								</div>
+								<div class="card-title">
+									<h3 class="card-primary-title">TOTAL: S/.124.00</h3>
+								</div>
+							</div>
+						</div>
+		            </div>
+		            <div data-role="collapsible">
+		                <h3>Paso 3: Financiamiento y Compra</h3>
+						<div class='inset'>
+							<h4>En construcción</h4>
+						</div>
+		            </div>
+		            
+		        </div>
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="../vendor/waves/waves.min.js"></script>
+		<script src="../vendor/wow/wow.min.js"></script>
+		<script src="../js/nativedroid2.js"></script>
+		<script src="../nd2settings.js"></script>
+
+	</body>
+</html>
