@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>.::Campañas Mobile::. - Nuevo Pedido</title>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8" />
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -20,16 +19,11 @@
 
 		<div data-role="page">
 
-			<nd2-include data-src="../examples/fragments/panel.left.html"></nd2-include>
-			<!--
-			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay" >
-				<nd2-include data-src="../examples/fragments/bottom.sheet.html"></nd2-include>
-			</div>-->
-
+			<nd2-include data-src="../panel.left.html"></nd2-include>
+			
 			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<!--<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
 				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Campa&ntilde;as Mobile</h1>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Campañas Mobile</h1>
 			</div>
 
 			<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
@@ -38,10 +32,11 @@
                 <input type="range" name="slider1" id="slider1b" value="67" min="0" max="100" data-highlight="true" disabled="true">
                 <label for="slider2b">Servicio:</label>
                 <input type="range" name="slider2" id="slider2b" value="48" min="0" max="100" data-highlight="true" disabled="true">
+                <hr/>
 
 		        <div data-role="collapsible-set" data-inset="false">
 		            <div data-role="collapsible">
-		                <h3>Paso 1: Selecci&oacute;n Equipo</h3>
+		                <h3>Paso 1: Selección Equipo</h3>
 		                <!-- EQUIPO -->
 						<div class='inset'>
 							<div class="nd2-card">
@@ -94,7 +89,7 @@
 
 		            </div>
 		            <div data-role="collapsible">
-		                <h3>Paso 2: Selecci&oacute;n Plan y Plazo</h3>
+		                <h3>Paso 2: Selección Plan y Plazo</h3>
 						<div class='inset'>
 							<div class="nd2-card card-media-right card-media-small">
 								<div class="card-media">
@@ -132,15 +127,36 @@
 		            <div data-role="collapsible">
 		                <h3>Paso 3: Financiamiento y Compra</h3>
 						<div class='inset'>
-							<h4>En construcción</h4>
-						</div>
+							<div class="nd2-card">
+								
+								<div class="card-title">
+									<h5 class="card-subtitle">Financiamiento en cuotas (12 Cuotas)</h5>
+									<p>Información de campaña</p>
+								</div>
+
+								<div class="card-title has-supporting-text">
+									<label for="select-choice-1c" class="select">Oficina</label>
+		                        	<select name="select-choice-1c" id="select-choice-1c" data-native-menu="false">
+			                            <option value="1">Oficina Principal</option>
+			                            <option value="2">Oficina Magdalena</option>
+			                        </select>
+								</div>
+
+				            	<div class="card-title">
+									<input type="checkbox" name="trm_contrato" id="trm_contrato"> 
+									<label for="trm_contrato">Acepto haber leído y estar de acuerdo con las condiciones.</label>
+								</div>
+							</div>
+		            	</div>
+		        	</div>
+		        		
+		        	</div>
+		            <div class="box">
+						<a href="#" class="ui-btn ui-btn-raised clr-primary"><i class='zmdi zmdi-shopping-cart'></i> COMPRAR</a>
 		            </div>
-		            
-		        </div>
+				</div>
 			</div>
-
 		</div>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>

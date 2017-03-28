@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>.::Campañas Mobile::. - Renovación Pedido</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="../vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="../vendor/wow/animate.css" />
+		<link rel="stylesheet" href="../css/nativedroid2.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8" />
+
+		<script type="text/javascript">
+			$("#popupDialog").popup("open");
+		</script>
+
+	</head>
+	<body>
+
+		<div data-role="page">
+
+			<nd2-include data-src="../panel.left.html"></nd2-include>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Campañas Mobile</h1>
+			</div>
+			
+			<div data-role="popup" id="popupDialog">
+				<div data-role="header">
+					<h1 class='nd-title'>Detalle Equipo</h1>
+				</div>
+				<div data-role="content">
+					                    <p>Descripción del equipo camara bien chevere. Procesador A9, Detector de Huella Digital.</p>
+                    <a href="#" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-primary"><i class='zmdi zmdi-plus'></i> Agregar</a>
+                    <a href="#" data-rel="back" data-role="button" data-inline="true" class="ui-btn ui-btn-primary">Cerrar</a>
+				</div>
+			</div>
+
+			<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
+				<!-- Credito Empleado -->
+				<label for="slider1b">Equipo:</label>
+                <input type="range" name="slider1" id="slider1b" value="67" min="0" max="100" data-highlight="true" disabled="true">
+                <label for="slider2b">Servicio:</label>
+                <input type="range" name="slider2" id="slider2b" value="48" min="0" max="100" data-highlight="true" disabled="true">
+                <hr/>
+
+                <div data-role="page" id="RenovacionPlan">
+			        <div data-role="collapsible-set" data-inset="true">
+			            <div data-role="collapsible">
+			                <h3>Paso 1: Selección Plan</h3>
+			                <!-- EQUIPO -->
+							<div class='inset'>
+								<div class="nd2-card">
+									
+								</div>
+							</div>
+			            </div>
+			            <div data-role="collapsible">
+			                <h3>Paso 2: Selección Plan y Plazo</h3>
+							<div class='inset'>
+								<div class="nd2-card">
+									
+								</div>
+							</div>
+			            </div>
+			            <div data-role="collapsible">
+			                <h3>Paso 3: Financiamiento y Compra</h3>
+							<div class='inset'>
+								<div class="nd2-card">
+									
+								</div>
+			            	</div>
+			        	</div>
+			            <div class="box">
+							<a href="#" class="ui-btn ui-btn-raised clr-primary">COMPRAR</a>
+			            </div>
+					</div>
+				</div>
+
+				<div data-role="page" id="RenovacionEquipo">
+					<div data-role="collapsible-set page" data-inset="true">
+			            <div data-role="collapsible">
+			                <h3>Paso 1: Selección Equipo</h3>
+			                <!-- EQUIPO -->
+							<div class='inset'>
+								<div class="nd2-card">
+									
+								</div>
+							</div>
+			            </div>
+			            <div data-role="collapsible">
+			                <h3>Paso 2: Selección Plan y Plazo</h3>
+							<div class='inset'>
+								<div class="nd2-card">
+									
+								</div>
+							</div>
+			            </div>
+			            <div data-role="collapsible">
+			                <h3>Paso 3: Financiamiento y Compra</h3>
+							<div class='inset'>
+								<div class="nd2-card">
+
+					            	<div>
+										<input type="checkbox" name="checkbox-1a" id="checkbox-1ab"> 
+										<label for="checkbox-1ab">Acepto haber leído y estar de acuerdo con las condiciones.</label>
+									</div>
+								</div>
+			            	</div>
+			        	</div>
+			            <div class="box">
+							<a href="#" class="ui-btn ui-btn-raised clr-primary"><i class='zmdi zmdi-shopping-cart'></i> COMPRAR</a>
+			            </div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="../vendor/waves/waves.min.js"></script>
+		<script src="../vendor/wow/wow.min.js"></script>
+		<script src="../js/nativedroid2.js"></script>
+		<script src="../nd2settings.js"></script>
+
+	</body>
+</html>
