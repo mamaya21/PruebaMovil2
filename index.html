@@ -6,6 +6,7 @@
 
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
 		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
 		<link rel="stylesheet" href="vendor/wow/animate.css" />
 		<link rel="stylesheet" href="css/nativedroid2.css" />
@@ -32,7 +33,85 @@
 			</div>
 
 			<div role="main" class="ui-content" data-inset="false">
-				<p>(Principal Campañas)</p>
+				<label for="crequipo">Equipo:</label>
+                <input type="range" name="crequipo" id="crequipo" value="67" min="0" max="100" data-highlight="true" disabled="true">
+                <label for="crservicio">Servicio:</label>
+                <input type="range" name="crservicio" id="crservicio" value="48" min="0" max="100" data-highlight="true" disabled="true">
+				
+				<table data-role="table" id="table-column-toggle" data-mode="column" class="ui-responsive table-stroke" data-mini="true">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Asignado</th>
+							<th>Disponible</th>
+							<th>Utilizado</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Equipo</th>
+							<td>450.00</td>
+							<td>450.00</td>
+							<td>0.00</td>
+						</tr>
+						<tr>
+							<th>Servicio</th>
+							<td>450.00</td>
+							<td>450.00</td>
+							<td>0.00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<hr/>
+			<div role="main" class="ui-content" data-inset="false">
+				<div data-role="collapsible">
+					<h3>987654321</h3>
+					<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
+						<table data-role="table" id="table-column-toggle" data-mode="column" class="ui-responsive table-stroke">
+							<thead>
+								<tr>
+									<th>Plan</th>
+									<th>Operador</th>
+									<th>Equipo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Plan Familia 99</td>
+									<td>Claro</td>
+									<td>Samsung Galaxy Note 4</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div data-role="collapsible">
+					<h3>934345567</h3>
+					<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
+						<table data-role="table" id="table-column-toggle" data-mode="column" class="ui-responsive table-stroke">
+							<thead>
+								<tr>
+									<th>Plan</th>
+									<th>Operador</th>
+									<th>Equipo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Plan Familia 80</td>
+									<td>Telefónica</td>
+									<td>Samsung Galaxy Note 5 Edge</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				
+			</div>
+			<div data-role="footer" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<p class="wow fadeIn" data-wow-delay='0.4s'>Fecha Campaña</p>
 			</div>
 
 		</div>
@@ -44,6 +123,5 @@
 		<script src="vendor/wow/wow.min.js"></script>
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
-
 	</body>
 </html>
