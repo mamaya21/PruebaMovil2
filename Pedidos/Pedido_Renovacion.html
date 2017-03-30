@@ -19,7 +19,7 @@
 
 		<div data-role="page">
 
-			<nd2-include data-src="../panel.left.html"></nd2-include>
+			<nd2-include data-src="Panels/panel.left.html"></nd2-include>
 
 			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
 				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
@@ -34,7 +34,16 @@
                 <input type="range" name="crservicio" id="crservicio" value="48" min="0" max="100" data-highlight="true" disabled="true">
                 <hr/>
 
-                <a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">Mostrar Tipo Renovación</a>
+				<ul data-role="listview" data-icon="false" id="list-lineas">
+					<li data-role="list-divider">
+						Líneas
+					</li>
+					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">987654321</a></li>
+					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">923456712</a></li>
+					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">923723422</a></li>
+					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">954675746</a></li>
+				</ul>
+
 				<div data-role="popup" id="popupDialogRenov">
 					<div data-role="header">
 						<h1 class='nd-title'>Tipo Renovación</h1>
@@ -218,10 +227,12 @@
 			    $("#RenPlan").click(function(){
 			        $("#RenovacionPlan").show();
 			        $("#RenovacionEquipo").hide();
+			        $("#list-lineas").hide();
 			    });
 			    $("#RenEqui").click(function(){
 			        $("#RenovacionPlan").hide();
 			        $("#RenovacionEquipo").show();
+			        $("#list-lineas").hide();
 			    });
 			});
 
