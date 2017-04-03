@@ -38,7 +38,16 @@
         <icon src="www/res/icon/android/Logo-mdpi-icon.png" qualifier="mdpi" />
         <icon src="www/res/icon/android/Logo-hdpi-icon.png" qualifier="hdpi" />
         <icon src="www/res/icon/android/Logo-xhdpi-icon.png" qualifier="xhdpi" />
-        <splash src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+
+        <!--splash src="ldpi.png" platform="android" qualifier="ldpi" />
+		<splash src="mdpi.png" platform="android" qualifier="mdpi" />
+		<splash src="hdpi.png" platform="android" qualifier="hdpi" />
+		<splash src="xhdpi.png" platform="android" qualifier="xhdpi" />
+		<splash src="fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />
+		<splash src="portrait-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
+		<splash src="landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" /-->
+
+        <gap:splash src="www/res/screen/android/drawable-port-hdpi-screen.png" gap:platform="android"/>
         <!--splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
         <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
         <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />
@@ -62,8 +71,8 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <platform name="ios">
+    <!--platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-    </platform>
+    </platform-->
 </widget>
