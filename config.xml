@@ -46,7 +46,7 @@
 		<splash src="fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />
 		<splash src="portrait-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
 		<splash src="landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" /-->
-
+		<splash src="splash.png" />
         <gap:splash src="www/res/screen/android/drawable-port-hdpi-screen.png" gap:platform="android"/>
         <!--splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
         <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
