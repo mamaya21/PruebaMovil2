@@ -34,7 +34,10 @@
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <platform name="android">
-        <icon src="www/res/icon/android/Logo.png" />
+        <icon src="www/res/icon/android/Logo-ldpi-icon.png" qualifier="ldpi" />
+        <icon src="www/res/icon/android/Logo-mdpi-icon.png" qualifier="mdpi" />
+        <icon src="www/res/icon/android/Logo-hdpi-icon.png" qualifier="hdpi" />
+        <icon src="www/res/icon/android/Logo-xhdpi-icon.png" qualifier="xhdpi" />
         <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
         <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
         <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />
