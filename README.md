@@ -1,78 +1,69 @@
-# nativeDroid2
+# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
-![nativeDroid2](http://nativedroid.godesign.ch/material/github_banner.jpg)
+A PhoneGap Hello World template
 
-jQueryMobile Template inspired by Material Design
+## Usage
 
-# Install
+#### PhoneGap CLI
 
-  **git**
+The hello-world template is the default when you create a new application using the [phonegap-cli][phonegap-cli-url].
 
-```git clone https://github.com/wildhaber/nativeDroid2.git```
+    phonegap create my-app
 
-  **bower**
+Create an app using this template specifically:
 
-```bower install nativeDroid2```
+    phonegap create my-app --template hello-world
 
-# Demo & [Documentation](http://nativedroid.scripter.click)
+To see a list of other available PhoneGap templates:
 
-Basic Elements
--
-- [Typography and Text Elements](http://nd2.godesign.ch/examples/elements/text.html)
-- [Grid System](http://nd2.godesign.ch/examples/elements/grid.html)
-- [Buttons & FABS](http://nd2.godesign.ch/examples/elements/buttons.html)
-- [Header & Footer](http://nd2.godesign.ch/examples/elements/header_footer.html)
-- [Listviews](http://nd2.godesign.ch/examples/elements/listviews.html)
-- [Form](http://nd2.godesign.ch/examples/elements/forms.html)
-- [Table](http://nd2.godesign.ch/examples/elements/tables.html)
-- [Dialog & Popups](http://nd2.godesign.ch/examples/elements/dialog_popups.html)
-- [Panels](http://nd2.godesign.ch/examples/elements/panels.html)
-- [Autocomplete](http://nd2.godesign.ch/examples/elements/autocomplete.html)
-- [Collapsible & Accordions](http://nd2.godesign.ch/examples/elements/collapsible_accordions.html)
+    phonegap template list
 
-Extended Elements
--
-- [Tabs](http://nd2.godesign.ch/examples/extended/tabs.html)
-- [Cards](http://nd2.godesign.ch/examples/extended/cards.html)
-- [Search](http://nd2.godesign.ch/examples/extended/search.html)
-- [Snackbars & Toasts](http://nd2.godesign.ch/examples/extended/toasts.html)
-- [Charts](http://nd2.godesign.ch/examples/extended/charts.html)
-- [Icons](http://nd2.godesign.ch/examples/extended/icons.html)
-- [Bottom Sheets](http://nd2.godesign.ch/examples/extended/bottomsheet.html)
+## [config.xml][config-xml]
 
-Widgets
--
-- [nd2-ad](http://nativedroid.scripter.click/nd2-ad/)
-- [nd2-include](http://nativedroid.scripter.click/nd2-include/)
+#### android-minSdkVersion (Android only)
 
-Nice to Know
--
-- [Colors & Styles](http://nd2.godesign.ch/info/colors_and_styles.html)
-- [Credits & License](http://nd2.godesign.ch/info/credits.html)
+Minimum SDK version supported on the target device. Maximum version is blank by default.
 
-# License
-*nativeDroid2 is distributed under the MIT-License*
+This template sets the minimum to `14`.
 
-The MIT License (MIT)
+    <preference name="android-minSdkVersion" value="14" />
 
-Copyright (c) 2015 Raphael Wildhaber, Godesign Webpublishing GmbH / http://nativedroid.godesign.ch
+#### &lt;access ...&gt; (All)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This template defaults to wide open access.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    <access origin="*" />
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+It is strongly encouraged that you restrict access to external resources in your application before releasing to production.
+
+For more information on whitelist configuration, see the [Cordova Whitelist Guide][cordova-whitelist-guide] and the [Cordova Whitelist Plugin documentation][cordova-plugin-whitelist]
+
+## [www/index.html][index-html]
+
+#### Content Security Policy (CSP)
+
+The default CSP is similarly open:
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+Much like the access tag above, you are strongly encouraged to use a more restrictive CSP in production.
+
+A good starting point declaration might be:
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
+
+For more information on the Content Security Policy, see the [section on CSP in the Cordova Whitelist Plugin documentation][cordova-plugin-whitelist-csp].
+
+Another good resource for generating a good CSP declaration is [CSP is Awesome][csp-is-awesome]
 
 
+[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
+[cordova-app]: http://github.com/apache/cordova-app-hello-world
+[bithound-img]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world/badges/score.svg
+[bithound-url]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world
+[config-xml]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/config.xml
+[index-html]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/www/index.html
+[cordova-whitelist-guide]: https://cordova.apache.org/docs/en/dev/guide/appdev/whitelist/index.html
+[cordova-plugin-whitelist]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist
+[cordova-plugin-whitelist-csp]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist#content-security-policy
+[csp-is-awesome]: http://cspisawesome.com
