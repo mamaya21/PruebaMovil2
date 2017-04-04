@@ -17,6 +17,15 @@
 	</head>
 	<body>
 
+		<div data-role="page">
+
+			<nd2-include data-src="panel.left.html"></nd2-include>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Campañas Mobile</h1>
+			</div>
+
 			<div role="main" class="ui-content wow fadeIn" data-wow-delay="0.2s" data-inset="false">
 				<!-- Credito Empleado -->
 				<label for="crequipo">Equipo:</label>
@@ -25,7 +34,7 @@
                 <input type="range" name="crservicio" id="crservicio" value="48" min="0" max="100" data-highlight="true" disabled="true">
                 <hr/>
 
-				<ul data-role="listview" data-icon="false" id="list-lineas" data-inset="true" data-filter="true" data-filter-placeholder="Buscar línea...">
+				<ul data-role="listview" data-icon="false" id="list-lineas" data-inset="true" data-filter="true">
 					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">987654321</a></li>
 					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">923456712</a></li>
 					<li><a href="#popupDialogRenov" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" class="ui-btn">923723422</a></li>
@@ -199,6 +208,7 @@
 				<!--/div-->
 
 			</div>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
@@ -207,7 +217,9 @@
 		<script src="../js/nativedroid2.js"></script>
 		<script src="../nd2settings.js"></script>
 
+
 		<script type="text/javascript">
+
 			$(document).ready(function(){
 			    $("#RenPlan").click(function(){
 			        $("#RenovacionPlan").show();
@@ -220,6 +232,8 @@
 			        $("#list-lineas").hide();
 			    });
 			});
+
 		</script>
+
 	</body>
 </html>

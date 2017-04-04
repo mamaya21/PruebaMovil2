@@ -16,6 +16,7 @@
 
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="4000" />
+    <preference name="Fullscreen" value="true" />
 
     <!--preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashMaintainAspectRatio" value="true" />
