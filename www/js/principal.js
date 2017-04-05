@@ -15,7 +15,6 @@ $('#pag_principalid').bind('pageinit', function(event) {
 function getLineasList() {
 	$.getJSON(serviceURL + 'carga_principal.php', function(data) {
 		//$('#dataLineas li').remove();
-
 		lineas = data.items;
 		$.each(lineas, function(index, linea) {
 
