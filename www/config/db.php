@@ -1,8 +1,8 @@
 <?php
 /*Datos de conexion a la base de datos*/
-define('DB_HOST', '192.168.1.51');//DB_HOST:  generalmente suele ser "127.0.0.1"
+define('DB_HOST', '192.168.0.33\SQL2012');//DB_HOST:  generalmente suele ser "127.0.0.1"
 define('DB_USER', 'sa');//Usuario de tu base de datos
-define('DB_PASS', 'sistemas');//Contraseña del usuario de la base de datos
+define('DB_PASS', 'v1su@ls0ft');//Contraseña del usuario de la base de datos
 define('DB_NAME', 'MOV_APPMobile');//Nombre de la base de datos
  
 /*Datos de la empresa*/

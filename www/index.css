@@ -1,0 +1,13 @@
+body,html{height:100%}
+
+#contenido{
+	height: 99.9%;
+	position: relative;
+}
+#pagina{
+	height: 80%;
+}
+#iframe1{
+	height:100%;
+	width: 100%;
+}

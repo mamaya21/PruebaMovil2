@@ -11,18 +11,17 @@
 
 	//$username = $_GET['us'];
 
-	$sql= "SELECT L.P_vcNum as numero, L.F_inCodOpe as codope, O.COMP_vcNOMCIA as compania, 
-			MD.vcNom as equipo, L.F_inCodPla as codplan, PL.vcNom as nombre_plan
-			FROM MOV_Linea L
-			INNER JOIN MOV_Plan PL
-			ON L.F_inCodPla = PL.P_inCod
-			INNER JOIN MOV_Dispositivo D
-			ON L.F_vcCodIMEI = D.P_vcCodIMEI 
-			INNER JOIN MOV_ModeloDispositivo MD
-			ON D.F_inCodModDis = MD.P_inCod
-			INNER JOIN M_COMP O
-			ON L.F_inCodOpe = O.p_inCodOpe
-			WHERE L.F_vcCodEmp = '10123468' AND L.F_inCodTip = 2";
+	$sql= "SELECT c.IdCampana as idcampana, c.Descripcion as nombrecampana, c.NuevoProducto as nuevo, 
+			c.ModificaProducto as modificar, c.BajaProducto as baja, cc.RenovarPlan as renovar, 
+			cc.Portabilidad as portabilidad, 
+			CONVERT(VARCHAR(19),c.FechaInicio, 3) as fechainicio, 
+			CONVERT(VARCHAR(19),c.FechaFin,3) as fechafin, 
+			CONVERT(VARCHAR(19),c.FechaInicioPedido,3) as finiciopedido, 
+			CONVERT(VARCHAR(19),c.FechaInicioEntrega,3) as finicioentrega
+			FROM MOV_CAM_Campana c
+			INNER JOIN MOV_CAM_CampanaConfiguracion cc
+			ON c.IdCampanaConfiguracion = cc.IdCampanaConfiguracion
+			WHERE c.IdEstado = 1 and c.btActivo = 1";
 
 	if($con){
 		$rcn= odbc_exec($con,$sql);

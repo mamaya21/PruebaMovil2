@@ -11,18 +11,13 @@
 
 	//$username = $_GET['us'];
 
-	$sql= "SELECT L.P_vcNum as numero, L.F_inCodOpe as codope, O.COMP_vcNOMCIA as compania, 
-			MD.vcNom as equipo, L.F_inCodPla as codplan, PL.vcNom as nombre_plan
-			FROM MOV_Linea L
-			INNER JOIN MOV_Plan PL
-			ON L.F_inCodPla = PL.P_inCod
-			INNER JOIN MOV_Dispositivo D
-			ON L.F_vcCodIMEI = D.P_vcCodIMEI 
-			INNER JOIN MOV_ModeloDispositivo MD
-			ON D.F_inCodModDis = MD.P_inCod
-			INNER JOIN M_COMP O
-			ON L.F_inCodOpe = O.p_inCodOpe
-			WHERE L.F_vcCodEmp = '10123468' AND L.F_inCodTip = 2";
+	$sql= "SELECT CT.Descripcion as tipocredito, CE.Aprobado as craprobado, 
+			CE.Utilizado as crutilizado, CE.Disponible as crdisponible,
+			(CE.Utilizado/CE.Aprobado)*100 as porcentaje
+			FROM MOV_CAM_CampanaCreditoEmpleado CE
+			INNER JOIN MOV_CAM_CreditoTipo CT
+			ON CE.IdTipoCredito = CT.IdTipoCredito
+			WHERE IdEmpleado = '10123468' AND IdCampana = 1";
 
 	if($con){
 		$rcn= odbc_exec($con,$sql);
