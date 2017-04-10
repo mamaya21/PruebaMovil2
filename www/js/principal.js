@@ -1,4 +1,4 @@
-var serviceURL = "http://localhost/ajax/";
+var serviceURL = "http://192.168.0.11/ajax/";
 var lineas;
 var credito;
 
